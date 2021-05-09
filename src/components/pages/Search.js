@@ -1,7 +1,9 @@
-import React from "react";
+import OmdbContainer from '../../components/OmdbContainer';
+
+import React from 'react';
 
 function Search() {
-  return (
+	return (
 		<div>
 			<h1>
 				<i className="fas fa-search pr-4"></i>
@@ -13,6 +15,7 @@ function Search() {
 				tristique tempor erat. Nullam non sem facilisis, tempus tortor sit amet,
 				volutpat nisl. Ut et turpis non nunc maximus mollis a vitae tortor.
 			</p>
+			<OmdbContainer />
 		</div>
 	);
 }
