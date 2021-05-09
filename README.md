@@ -5,25 +5,34 @@ first of many react apps: pupster, tinder-like app for puppies
 
 In this activity we will work to create an entire React application from scratch, complete with routing and AJAX requests to the [Dog Ceo API](https://dog.ceo/dog-api/): an API for dog images.
 ```
-├ /npm
+├>npm
 │[x] axios+bootstrap+ReactRouter 
-├ /public
-│ └── index.html
-│ [x] cdn fontawesome
-│
-└── src
-  ├components
-  │[] 
-  │[] 
-  │[] 
-  │ 
-  ├App.js
-  │[] about
-  │[] search
-  │[] discover
-  │    
-  └index.js
-        [x] import bootstrap
+├>public
+│└index.html
+│[x] cdn fontawesome
+└>src
+ ├pages
+ │[]about
+ │[]search
+ │[]discover
+ │ 
+ ├components
+ │[] Alert Card
+ │[] Card Btn
+ │[] Col
+ │[] Container
+ │[] Footer
+ │[] Hero
+ │[] Navbar
+ │[] Row
+ │[] Search Form
+ │[] Search Results
+ │[] Wrapper
+ │    
+ ├App.js
+ │    
+ └index.js
+  [x] import bootstrap
    ```
 
 ### Instructions
