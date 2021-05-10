@@ -9,5 +9,10 @@ export default {
 		const res = axios.get('https://dog.ceo/api/breed/' + query + '/images');
 		console.log( `res`, res );
     return res;
-  }
+  }, 
+	random: function () {
+		const res = axios.get('https://dog.ceo/api/breeds/image/random');
+		console.log( `res`, res );
+    return res;
+  }, 
 };

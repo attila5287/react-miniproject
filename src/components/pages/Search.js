@@ -4,7 +4,7 @@ import React from 'react';
 function Search() {
 	return (
 		<div>
-			<h1 className="bg-secondary p-0 rounded text-primary text-center">
+			<h1 className="bg-secondary p-0 rounded text-secondary text-center">
 				<i className="fab fa-searchengin mx-2"></i>
 				<i>
 				Search
@@ -16,11 +16,11 @@ function Search() {
 				<h6 className="fas fa-cog fa-spin mx-0 text-secondary"></h6>
 				<i>
 					Enter a dog breed name in search form below,
-					<span className="fas fa-paw text-info mx-1"></span> puggle is default
-					selection, here are some suggestions:
-					<i className="fas fa-paw text-warning mx-1"></i>dingo
-					<i className="fas fa-paw text-warning mx-1"></i> african
-					<i className="fas fa-paw text-warning mx-1"></i> eskimo
+					<span className="fas fa-th text-primary mx-1"></span>
+					puggle is default selection, here are some suggestions:
+					<i className="fas fa-search-minus mx-1"></i>dingo
+					<i className="fas fa-search-minus mx-1"></i> african
+					<i className="fas fa-search-minus mx-1"></i> eskimo
 				</i>
 			</div>
 

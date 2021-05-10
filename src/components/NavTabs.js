@@ -8,7 +8,7 @@ function NavTabs() {
   const location = useLocation();
 
   return (
-		<ul className="nav nav-tabs p-2">
+		<ul className="nav nav-tabs py-1">
 			<li className="nav-item">
 				<Link
 					to="/search"
@@ -25,7 +25,7 @@ function NavTabs() {
 					to="/"
 					className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
 				>
-					<i className="fas fa-home"></i> About
+					<i className="fas fa-info-circle"></i> About
 				</Link>
 			</li>
 

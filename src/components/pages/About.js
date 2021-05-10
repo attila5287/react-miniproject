@@ -3,8 +3,8 @@ import React from "react";
 function About() {
   return (
 		<div>
-			<h1 className="bg-secondary p-0 rounded text-primary text-center">
-				<i className="fas fa-paw mx-2"></i>
+			<h1 className="bg-secondary p-0 rounded text-secondary text-center">
+				<i className="fas fa-info-circle mx-2"></i>
 				<i>
 				About
 				</i>

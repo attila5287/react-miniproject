@@ -7,25 +7,36 @@ In this activity we will work to create an entire React application from scratch
 ```
 ├>npm
 │[x] axios+bootstrap+ReactRouter 
+│  
 ├>public
-│└index.html
-│[x] cdn fontawesome
+│ └index.html
+│   [x] cdn fontawesome
+│  
 └>src
- ├pages
- │[x]about
- │[x]search
- │[]discover
+ ├─>>pages
+ │ [x]about
+ │ [x]search
+ │ [ ]discover
  │ 
- ├components
- │[] Search Form
- │[] Search Results
- │[] Result List
- │[] Nav Tabs
+ ├─>>components
+ │  ├─[x] /discover/RandomContainer
+ │  ├─[x] /discover/RandomBtn
+ │  ├─[x] /discover/RandomResult
+ │  ├─[ ] /discover/ThumbsUpBtn
+ │  ├─[ ] /discover/ThumbsDownBtn
+ │  │   
+ │  ├─[x] /search/Search Form
+ │  ├─[x] /search/Search Container
+ │  ├─[x] /search/Result List
+ │  │
+ │  └─[x] Nav Tabs
+ │  
  │    
  ├App.js
  │    
  └index.js
-  [x] import bootstrap
+   └[x] import bootstrap
+   
    ```
 
 ### Instructions
