@@ -11,7 +11,7 @@ function SearchForm(props) {
 			<form>
 				<div className="form-group shadow-lg rounded p-1 mb-2">
 					<label htmlFor="search">
-							<i className="text-light">Search dog images by breed: </i>
+							<i className="text-light">Search dog images by breed </i>
 					</label>
 					<input
 						onChange={props.handleInputChange}
@@ -19,7 +19,7 @@ function SearchForm(props) {
 						name="search"
 						type="text"
 						className="form-control shadow-lg"
-						placeholder="Type breed"
+						placeholder="Type here, default puggle"
 						id="search"
 					/>
 					<button
