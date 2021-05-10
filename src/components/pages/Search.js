@@ -4,21 +4,25 @@ import React from 'react';
 function Search() {
 	return (
 		<div>
-			<h1 className="bg-light p-1 rounded text-primary text-center">
-				<i className="fas fa-search mx-2"></i>
+			<h1 className="bg-secondary p-0 rounded text-primary text-center">
+				<i className="fab fa-searchengin mx-2"></i>
+				<i>
 				Search
+				</i>
 			</h1>
 
-			<p>
-				<i className="fas fa-info-circle mx-2"></i>
-				Enter a dog breed name in search form below, doberman is default
-				selection, here are some suggestions:
-			</p>
-			<p>
-				<i className="fas fa-lightbulb text-warning mx-1"></i>chihuahua
-				<i className="fas fa-lightbulb text-warning mx-1"></i> boxer
-				<i className="fas fa-lightbulb text-warning mx-1"></i>pitbull
-			</p>
+			<div className="p-1 text-muted">
+				<h4 className="fas fa-cog fa-pulse mx-0 text-secondary"></h4>
+				<h6 className="fas fa-cog fa-spin mx-0 text-secondary"></h6>
+				<i>
+					Enter a dog breed name in search form below,
+					<span className="fas fa-paw text-info mx-1"></span> puggle is default
+					selection, here are some suggestions:
+					<i className="fas fa-paw text-warning mx-1"></i>dingo
+					<i className="fas fa-paw text-warning mx-1"></i> african
+					<i className="fas fa-paw text-warning mx-1"></i> eskimo
+				</i>
+			</div>
 
 			<SearchResultContainer />
 		</div>

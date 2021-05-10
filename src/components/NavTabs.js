@@ -11,6 +11,17 @@ function NavTabs() {
 		<ul className="nav nav-tabs p-2">
 			<li className="nav-item">
 				<Link
+					to="/search"
+					className={
+						location.pathname === '/search' ? 'nav-link active' : 'nav-link'
+					}
+				>
+					<i className="fas fa-search"></i> Search
+				</Link>
+			</li>
+
+			<li className="nav-item">
+				<Link
 					to="/"
 					className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
 				>
@@ -26,16 +37,6 @@ function NavTabs() {
 					}
 				>
 					<i className="fas fa-compass"></i> Discover
-				</Link>
-			</li>
-			<li className="nav-item">
-				<Link
-					to="/search"
-					className={
-						location.pathname === '/search' ? 'nav-link active' : 'nav-link'
-					}
-				>
-					<i className="fas fa-search"></i> Search
 				</Link>
 			</li>
 		</ul>

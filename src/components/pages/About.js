@@ -3,9 +3,11 @@ import React from "react";
 function About() {
   return (
 		<div>
-			<h1 className="bg-light p-1 rounded text-primary text-center">
-				<i className="fas fa-home mx-2"></i>
-				About Page
+			<h1 className="bg-secondary p-0 rounded text-primary text-center">
+				<i className="fas fa-paw mx-2"></i>
+				<i>
+				About
+				</i>
 			</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque

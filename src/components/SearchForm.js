@@ -5,8 +5,10 @@ function SearchForm(props) {
 		<form>
 			<div className="form-group shadow-lg rounded p-1 mb-2">
 				<label htmlFor="search">
-					<i className="fas fa-search-plus mx-1"></i>
-					Search:
+          <h4 className='d-flex flex-row justify-content-center'>
+          <i className="fas fa-search-plus mx-1"></i>
+            <i className="text-info"> Query By Breed: </i>
+          </h4>
 				</label>
 				<input
 					onChange={props.handleInputChange}

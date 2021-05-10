@@ -3,9 +3,11 @@ import React from 'react';
 function Discover() {
 	return (
 		<div>
-			<h1 className="bg-light p-1 rounded text-primary text-center">
+			<h1 className="bg-secondary p-0 rounded text-primary text-center">
 				<i className="fas fa-compass mx-2"></i>
+				<i>
 				Discover
+				</i>
 			</h1>
 			<p>
 				Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum,
