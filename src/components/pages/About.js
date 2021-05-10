@@ -3,8 +3,8 @@ import React from "react";
 function About() {
   return (
 		<div>
-			<h1>
-				<i className="fas fa-home pr-4"></i>
+			<h1 className="bg-light p-1 rounded text-primary text-center">
+				<i className="fas fa-home mx-2"></i>
 				About Page
 			</h1>
 			<p>

@@ -3,8 +3,8 @@ import React from 'react';
 function Discover() {
 	return (
 		<div>
-			<h1>
-				<i className="fas fa-compass pr-4"></i>
+			<h1 className="bg-light p-1 rounded text-primary text-center">
+				<i className="fas fa-compass mx-2"></i>
 				Discover
 			</h1>
 			<p>

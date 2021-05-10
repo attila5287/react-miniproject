@@ -14,7 +14,7 @@ In this activity we will work to create an entire React application from scratch
  ├pages
  │[x]about
  │[x]search
- │[x]discover
+ │[]discover
  │ 
  ├components
  │[] Search Form
@@ -46,7 +46,7 @@ In this activity we will work to create an entire React application from scratch
 
     - [ ] -  `/discover`: This page displays a photo of a random dog retrieved from the [Dog Ceo API](https://dog.ceo/dog-api/). This page contains 2 clickable buttons: one for passing or "thumbs-downing" a dog, and one for picking or "thumbs-upping" a dog. When either button is clicked, a new dog image is loaded from the API. If you "thumbs up" a dog, there is a 1 in 5 chance that the dog likes you too, and the friends count goes up by 1.
 
-    - [ ] -  `/search`: This page allows you to search the [Dog Ceo API](https://dog.ceo/dog-api/) for all dogs by breed. After a search is made, a list of all of the results appears underneath.
+    - [x] -  `/search`: This page allows you to search the [Dog Ceo API](https://dog.ceo/dog-api/) for all dogs by breed. After a search is made, a list of all of the results appears underneath.
 
 - [ ] -  Your Pupster app should implement each of these three pages and their basic functionality, **don't spend much time styling your app until you have completed everything else.**
 
