@@ -1,5 +1,4 @@
-import OmdbContainer from '../../components/OmdbContainer';
-
+import SearchResultContainer from '../SearchResultContainer';
 import React from 'react';
 
 function Search() {
@@ -15,7 +14,8 @@ function Search() {
 				tristique tempor erat. Nullam non sem facilisis, tempus tortor sit amet,
 				volutpat nisl. Ut et turpis non nunc maximus mollis a vitae tortor.
 			</p>
-			<OmdbContainer />
+
+			<SearchResultContainer />
 		</div>
 	);
 }
