@@ -12,22 +12,15 @@ In this activity we will work to create an entire React application from scratch
 │[x] cdn fontawesome
 └>src
  ├pages
- │[]about
- │[]search
- │[]discover
+ │[x]about
+ │[x]search
+ │[x]discover
  │ 
  ├components
- │[] Alert Card
- │[] Card Btn
- │[] Col
- │[] Container
- │[] Footer
- │[] Hero
- │[] Navbar
- │[] Row
  │[] Search Form
  │[] Search Results
- │[] Wrapper
+ │[] Result List
+ │[] Nav Tabs
  │    
  ├App.js
  │    
