@@ -16,7 +16,7 @@ function SearchForm(props) {
 					name="search"
 					type="text"
 					className="form-control shadow-lg"
-					placeholder="Search for images"
+					placeholder="Search for images (default: puggle)"
 					id="search"
 				/>
 				<button

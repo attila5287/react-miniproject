@@ -6,7 +6,7 @@ import API from "../utils/API";
 class SearchResultContainer extends Component {
   state = {
     search: "",
-    results: []
+    results: [],
   };
 
   // When this component mounts, search the Giphy API for pictures of kittens
