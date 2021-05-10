@@ -6,7 +6,7 @@ function ResultList(props) {
     <div className="row no-gutters align-items-center">
       {props
         .results
-        .slice(12)
+        .slice(0,12)
         .map((result) => (
           <div className="col-4" key={result}>
             <Animated animationIn="zoomIn" animationInDelay="1000" isVisible={true}>
