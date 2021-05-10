@@ -6,7 +6,7 @@ const APIKEY = "&api_key=dc6zaTOxFJmzC&limit=20";
 // Export an object with a "search" method that searches the Giphy API for the passed query
 export default {
 	search: function ( query ) {
-		const res = axios.get('https://dog.ceo/api/breeds/image/random');
+		const res = axios.get('https://dog.ceo/api/breed/' + query + '/images');
 		console.log( `res`, res );
     return res;
   }

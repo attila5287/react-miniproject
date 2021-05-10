@@ -16,7 +16,7 @@ class SearchResultContainer extends Component {
 
   searchGiphy = query => {
     API.search(query)
-      .then(res => this.setState({ results: [res.data.message] }))
+      .then(res => this.setState({ results: res.data.message }))
       .catch(err => console.log(err));
   };
 
