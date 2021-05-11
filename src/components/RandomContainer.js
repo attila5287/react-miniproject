@@ -12,7 +12,7 @@ class RandomContainer extends Component {
 	};
 
 	// When this component mounts, search the Giphy API for pictures of kittens
-	componentD\Mount() {
+	componentDidMount() {
 		this.randomNext();
 	}
 
