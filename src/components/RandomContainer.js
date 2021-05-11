@@ -12,7 +12,7 @@ class RandomContainer extends Component {
 	};
 
 	// When this component mounts, search the Giphy API for pictures of kittens
-	componentDidMount() {
+	componentD\Mount() {
 		this.randomNext();
 	}
 
@@ -30,7 +30,7 @@ class RandomContainer extends Component {
 
 	render() {
 		return (
-			<div class='mini'>		
+			<div className='mini'>		
 				<RandomBtn handleRandom={this.handleRandom} />
 				<RandomResult results={this.state.results} />
 				<ThumbsUpBtn />
