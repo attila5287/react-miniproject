@@ -5,12 +5,12 @@ function RandomContainer(props) {
 		<div className="mini">
 			{props.results.map((result) => (
 				<div key={result} className="text-center container-fluid">
-					<h3 className="text-capitalize">
-						<i className="fas fa-dna mx-1"></i>
+					<h5 className="text-uppercase">
+						<i className="fas fa-dna mx-1 text-2xl"></i>
 						<i className="text-muted">
 							{result.split('/')[result.split('/').length - 2]}
 						</i>
-					</h3>
+					</h5>
 					<img
 						alt={result}
 						className="img-fluid border-0 bg-secondary rounded shadow-lg mb-2"

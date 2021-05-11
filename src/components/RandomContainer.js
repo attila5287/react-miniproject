@@ -3,6 +3,7 @@ import RandomBtn from './RandomBtn';
 import ThumbsDownBtn from './ThumbsDownBtn';
 import ThumbsUpBtn from './ThumbsUpBtn';
 import RandomResult from './RandomResult';
+import ModalGoodNews from './ModalGoodNews';
 import API from '../utils/API';
 
 
@@ -27,15 +28,27 @@ class RandomContainer extends Component {
 		event.preventDefault();
 		this.randomNext();
 	};
+  thumbsUp = ( event ) => {
+		event.preventDefault();
+    
+    console.log( 'test thumbs up' );
 
+  };
+  thumbsDown = ( event ) => {
+		event.preventDefault();
+    
+    console.log( 'test thumbs down' );
+
+  };
 	render() {
 		return (
-			<div className='mini'>		
+			<div className="mini mb-5">
 				<RandomBtn handleRandom={this.handleRandom} />
 				<RandomResult results={this.state.results} />
-				<ThumbsUpBtn />
-				<ThumbsDownBtn />
-			</div>		
+				<ThumbsUpBtn thumbsUp={this.thumbsUp} />
+        <ThumbsDownBtn thumbsDown={ this.thumbsDown } />
+        <ModalGoodNews/>
+			</div>
 		);
 	}
 }
