@@ -28,7 +28,7 @@ function Discover() {
 					</div>
 				</div>
 			</Animated>
-			<div className="mini">
+			<div className="mini">  
 				<Animated
 					animationIn="fadeInUp"
 					animationInDelay="2000"
