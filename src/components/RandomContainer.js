@@ -30,7 +30,7 @@ class RandomContainer extends Component {
 
 	render() {
 		return (
-			<div>		
+			<div class='mini'>		
 				<RandomBtn handleRandom={this.handleRandom} />
 				<RandomResult results={this.state.results} />
 				<ThumbsUpBtn />

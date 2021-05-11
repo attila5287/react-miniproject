@@ -9,10 +9,11 @@ function SearchForm(props) {
 			isVisible={true}
 		>
 			<form>
-				<div className="form-group shadow-lg rounded p-1 mb-2">
-					<label htmlFor="search">
-							<i className="text-light">Search dog images by breed </i>
-					</label>
+				<div className="form-group rounded p-1 mb-2">
+						<p className="text-left text-light">
+							<i className="fas fa-search-plus"></i>
+							Search dog images by breed{' '}
+						</p>
 					<input
 						onChange={props.handleInputChange}
 						value={props.search}

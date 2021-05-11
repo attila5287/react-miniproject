@@ -8,12 +8,10 @@ import Search from './components/pages/Search';
 function App() {
   return (
     <Router>
-      <div>
         <NavTabs />
         <Route exact path="/" component={About} />
         <Route exact path="/search" component={Search} />
         <Route exact path="/discover" component={Discover} />
-      </div>
     </Router>
   );
 }

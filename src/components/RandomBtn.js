@@ -2,7 +2,7 @@ import React from "react";
 
 function RandomBtn(props) {
   return (
-		<div className="form-group w-50 shadow-lg rounded p-0 mb-1">
+		<div className="form-group shadow-lg rounded p-0 mb-1">
 			<label htmlFor="next">
 				<i className="fas fa-info-circle mx-1"></i>
 				<i>
