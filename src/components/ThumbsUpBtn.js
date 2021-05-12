@@ -9,7 +9,7 @@ function ThumbsUpBtn(props) {
       <p>
         <i className="fas fa-thumbs-up"></i>
         <i className="fas fa-thumbs-up fa-flip-horizontal mx-1"></i>
-        { props.match }
+        { props.matches }
       </p>
 			<button
 				className="btn btn-success btn-lg my-0 w-100"

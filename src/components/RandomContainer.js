@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import RandomBtn from './RandomBtn';
 import ThumbsDownBtn from './ThumbsDownBtn';
 import ThumbsUpBtn from './ThumbsUpBtn';
@@ -6,65 +6,54 @@ import RandomResult from './RandomResult';
 import API from '../utils/API';
 
 
-class RandomContainer extends Component {
-  state = {
-    match : 0,
-		results: [], 
-    ups : 0,
-	};
-
+function RandomContainer() {
+  const [ups, setUps] = useState(0);
+  const [matches, setMatches] = useState(0);
 	// When this component mounts, search the Giphy API for pictures of kittens
-	componentDidMount() {
-		this.randomNext();
-	}
+  const [results, setResults] = useState([
+		// 'https://images.dog.ceo/breeds/dhole/n02115913_915.jpg'
+	]);
 
-	randomNext = () => {
+	const handleRandom = () => {
 		API.random()
-			.then((res) => this.setState({ results: [res.data.message] }))
+			.then((res) => setResults( [res.data.message] ))
 			.catch((err) => console.log(err));
 	};
-
 	// When the form is submitted, search the Giphy API for `this.state.search`
-	handleRandom = (event) => {
-		event.preventDefault();
-		this.randomNext();
+  const thumbsUp = () => {
+		console.log('test thumbs up');
+		setUps(ups + 1);
+		const myNum = Math.floor(Math.random() * 5);
+		console.log(`myNum`, myNum);
+		const otherNum = Math.floor(Math.random() * 5);
+		console.log(`otherNum`, otherNum);
+
+		const match = Math.abs(myNum - otherNum) < 1;
+		console.log(`matches`, match);
+		if (match) {
+			setMatches(matches + 1);
+		}
+		handleRandom();
 	};
-  thumbsUp = ( ) => {
-    console.log( 'test thumbs up' );
-    this.setState( { ups: this.state.ups + 1 } );
-    const myNum = Math.floor(Math.random() * 5);
-    console.log( `myNum`, myNum );
-    const otherNum = Math.floor( Math.random() * 5 );
-    console.log( `otherNum`, otherNum );
-    
-    const matched = (Math.abs( myNum - otherNum) < 1 );
-    console.log( `matched`, matched );
-    if (matched) {
-      this.setState( { match: this.state.match + 1 } );
-    }
-		this.randomNext();
-    
-  };
-  thumbsDown = ( ) => {
-    console.log( 'test thumbs down' );
-		this.randomNext();
-
-
-  };
-	render() {
+  const thumbsDown = () => {
+		console.log('test thumbs down');
+		handleRandom();
+	};
 		return (
 			<div className="mini mb-5">
-				<RandomBtn handleRandom={this.handleRandom} />
+        <RandomBtn handleRandom={ () => {
+          handleRandom();
+          document.getElementById( 'start' ).classList.add( 'disabled' );
+        } } />
 				<ThumbsUpBtn
-					count={this.state.ups}
-					match={this.state.match}
-					thumbsUp={this.thumbsUp}
+					count={ups}
+					matches={matches}
+					thumbsUp={thumbsUp}
 				/>
-				<ThumbsDownBtn thumbsDown={this.thumbsDown} />
-				<RandomResult results={this.state.results} />
+				<ThumbsDownBtn thumbsDown={thumbsDown} />
+				<RandomResult results={results} />
 			</div>
 		);
-	}
 }
 
 
