@@ -30,7 +30,7 @@ import {Animated} from 'react-animated-css';
             animationOut="fadeOut"
             isVisible={true}
             animationInDelay="2000">
-            <li
+            <a
               href="/discover"
               className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
@@ -50,14 +50,14 @@ import {Animated} from 'react-animated-css';
                   When either button is clicked, a new dog image is loaded from the API.
                 </i>
               </small>
-            </li>
+            </a>
           </Animated>
           <Animated
             animationIn="bounceInRight"
             animationOut="fadeOut"
             isVisible={true}
             animationInDelay="3000">
-            <li
+            <a
               href="/search"
               className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
@@ -72,7 +72,7 @@ import {Animated} from 'react-animated-css';
                 for all dogs by breed. After a search is made, a list of all of the results
                 appears underneath.
               </p>
-            </li>
+            </a>
           </Animated>
         </div>
         <a
