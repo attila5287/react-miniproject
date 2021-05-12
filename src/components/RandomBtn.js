@@ -6,7 +6,7 @@ function RandomBtn(props) {
 			<label htmlFor="next">
 				<h2 className="fas fa-random mx-1"></h2>
 				<i>
-					<small>Display next random profile</small>
+					<small>Hit the button to display next random profile</small>
 				</i>
 			</label>
 			<button
@@ -18,7 +18,13 @@ function RandomBtn(props) {
 					<i class="fas fa-globe fa-stack-2x fa-spin text-secondary"></i>
 					<i class="fab fa-phabricator fa-pulse fa-stack-1x text-primary text-2xl"></i>
 				</h1>
-        <i className="text-primary text-xl">Discover</i>
+        <i className="text-primary text-xl">
+          <b>
+            <span className='text-muted'>
+            Dare To Explore!
+          </span>
+          </b>
+        </i>
 			</button>
 		</div>
 	);

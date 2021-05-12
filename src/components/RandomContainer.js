@@ -3,13 +3,14 @@ import RandomBtn from './RandomBtn';
 import ThumbsDownBtn from './ThumbsDownBtn';
 import ThumbsUpBtn from './ThumbsUpBtn';
 import RandomResult from './RandomResult';
-import ModalGoodNews from './ModalGoodNews';
 import API from '../utils/API';
 
 
 class RandomContainer extends Component {
-	state = {
-		results: []
+  state = {
+    match : 0,
+		results: [], 
+    ups : 0,
 	};
 
 	// When this component mounts, search the Giphy API for pictures of kittens
@@ -28,26 +29,38 @@ class RandomContainer extends Component {
 		event.preventDefault();
 		this.randomNext();
 	};
-  thumbsUp = ( event ) => {
-		event.preventDefault();
-    
+  thumbsUp = ( ) => {
     console.log( 'test thumbs up' );
-
-  };
-  thumbsDown = ( event ) => {
-		event.preventDefault();
+    this.setState( { ups: this.state.ups + 1 } );
+    const myNum = Math.floor(Math.random() * 5);
+    console.log( `myNum`, myNum );
+    const otherNum = Math.floor( Math.random() * 5 );
+    console.log( `otherNum`, otherNum );
     
+    const matched = (Math.abs( myNum - otherNum) < 1 );
+    console.log( `matched`, matched );
+    if (matched) {
+      this.setState( { match: this.state.match + 1 } );
+    }
+    
+  };
+  thumbsDown = ( ) => {
     console.log( 'test thumbs down' );
+    this.setState( { match: this.state.match + 1 } );
+
 
   };
 	render() {
 		return (
 			<div className="mini mb-5">
 				<RandomBtn handleRandom={this.handleRandom} />
+				<ThumbsUpBtn
+					count={this.state.ups}
+					match={this.state.match}
+					thumbsUp={this.thumbsUp}
+				/>
+				<ThumbsDownBtn thumbsDown={this.thumbsDown} />
 				<RandomResult results={this.state.results} />
-				<ThumbsUpBtn thumbsUp={this.thumbsUp} />
-        <ThumbsDownBtn thumbsDown={ this.thumbsDown } />
-        <ModalGoodNews/>
 			</div>
 		);
 	}

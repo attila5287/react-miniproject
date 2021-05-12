@@ -18,7 +18,11 @@ import {Animated} from 'react-animated-css';
                 <h4 className="mb-1">React</h4>
                 <h1 className="fab fa-react mb-0"></h1>
               </div>
-              <p className="my-0">React, Axios, Bootswatch, Font-Awesome</p>
+              <p className="my-0">
+                <i>
+                REACT for user interface, Axios for requests, Bootswatch for stylesheets, Font-Awesome for icons, Animate.css for animations
+                </i>
+              </p>
             </a>
           </Animated>
           <Animated
@@ -30,7 +34,7 @@ import {Animated} from 'react-animated-css';
               href="/discover"
               className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
-                <h3 className="mb-1">/Discover</h3>
+                <h3 className="mb-1 text-light">/Discover</h3>
                 <h1 className="fas fa-compass mb-0"></h1>
               </div>
               <p className="mb-0 border-bottom border-light">
@@ -57,7 +61,7 @@ import {Animated} from 'react-animated-css';
               href="/search"
               className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
-                <h3 className="mb-1">/Search</h3>
+                <h3 className="mb-1 text-light">/Search</h3>
                 <h1 className="fas fa-search mb-0"></h1>
               </div>
               <p className="mb-1">
@@ -76,7 +80,7 @@ import {Animated} from 'react-animated-css';
           className="list-group-item list-group-item-action flex-column align-items-start">
           <Animated animationIn="fadeIn" animationInDelay="4000" isVisible={true}>
             <div className="d-flex w-100 justify-content-between">
-              <h6 className="mb-1">@attila5287</h6>
+              <h6 className="mb-1 text-light">@attila5287</h6>
               <h4 className="fab fa-github mb-0"></h4>
             </div>
           </Animated>
@@ -86,7 +90,7 @@ import {Animated} from 'react-animated-css';
           className="list-group-item list-group-item-action flex-column align-items-start">
           <Animated animationIn="fadeIn" animationInDelay="5000" isVisible={true}>
             <div className="d-flex w-100 justify-content-between">
-              <h6 className="mb-1">Developer</h6>
+              <h6 className="mb-1 text-light">Developer</h6>
               <img
                 src="https://raw.githubusercontent.com/attila5287/img_readme/main/all/dev.jpg"
                 alt="dev-img"

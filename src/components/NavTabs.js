@@ -39,6 +39,19 @@ function NavTabs() {
 					<i className="fas fa-compass"></i> Discover
 				</Link>
 			</li>
+			<li className="nav-item rounded p-0 px-2">
+				<i className="fab fa-react fa-spin text-xl text-info mt-1"></i>
+				<i>React UI</i>
+			</li>
+			<li className="nav-item rounded p-0 px-1">
+				<i className="fab fa-github text-xl text-secondary mt-1"></i>
+				<i>
+					<small>
+						<a href="attila5287.github.io/"></a>
+						attila5287
+					</small>
+				</i>
+			</li>
 		</ul>
 	);
 }
