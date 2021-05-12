@@ -10,9 +10,7 @@ function RandomContainer() {
   const [ups, setUps] = useState(0);
   const [matches, setMatches] = useState(0);
 	// When this component mounts, search the Giphy API for pictures of kittens
-  const [results, setResults] = useState([
-		// 'https://images.dog.ceo/breeds/dhole/n02115913_915.jpg'
-	]);
+  const [results, setResults] = useState([]);
 
 	const handleRandom = () => {
 		API.random()
@@ -44,6 +42,8 @@ function RandomContainer() {
         <RandomBtn handleRandom={ () => {
           handleRandom();
           document.getElementById( 'start' ).classList.add( 'disabled' );
+          document.getElementById('expIconGlobe').classList.remove('fa-spin');
+          document.getElementById('expIconNeedle').classList.remove('fa-pulse');
         } } />
 				<ThumbsUpBtn
 					count={ups}
