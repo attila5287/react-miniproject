@@ -14,8 +14,6 @@ function ThumbsUpBtn(props) {
 			<button
 				className="btn btn-success btn-lg my-0 w-100"
 				onClick={props.thumbsUp}
-				dataToggle="modal"
-				dataTarget="#ModalGoodNews"
 			>
 				<h1 className="fas fa-paw mb-0"></h1>
 			</button>
