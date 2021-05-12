@@ -9,7 +9,6 @@ function ThumbsDownBtn(props) {
 			>
 				<h1 className="fas fa-paw fa-flip-vertical mb-0"></h1>
 			</button>
-			<i className="fas fa-thumbs-down"></i>
 		</div>
 	);
 }

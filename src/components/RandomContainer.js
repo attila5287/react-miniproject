@@ -42,11 +42,12 @@ class RandomContainer extends Component {
     if (matched) {
       this.setState( { match: this.state.match + 1 } );
     }
+		this.randomNext();
     
   };
   thumbsDown = ( ) => {
     console.log( 'test thumbs down' );
-    this.setState( { match: this.state.match + 1 } );
+		this.randomNext();
 
 
   };
