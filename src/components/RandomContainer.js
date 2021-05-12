@@ -4,17 +4,18 @@ import ThumbsDownBtn from './ThumbsDownBtn';
 import ThumbsUpBtn from './ThumbsUpBtn';
 import RandomResult from './RandomResult';
 import API from '../utils/API';
-
+import axios from 'axios';
 
 function RandomContainer() {
   const [ups, setUps] = useState(0);
   const [matches, setMatches] = useState(0);
 	// When this component mounts, search the Giphy API for pictures of kittens
-  const [results, setResults] = useState([]);
+
+  const [ results, setResults ] = useState( [] );
 
 	const handleRandom = () => {
 		API.random()
-			.then((res) => setResults( [res.data.message] ))
+			.then((res) => setResults( res ))
 			.catch((err) => console.log(err));
 	};
 	// When the form is submitted, search the Giphy API for `this.state.search`

@@ -13,7 +13,9 @@ function Search() {
           </i>
         </h1>
       </Animated>
-      <Animated animationIn="bounceInRight" animationInDelay="1000" isVisible={true}>
+      <Animated
+        animationIn="bounceInRight"
+        animationInDelay={1000} isVisible={ true }>
         <div className="px-4 text-muted">
           <h4 className="fas fa-cog fa-pulse mx-0 text-secondary"></h4>
           <h6 className="fas fa-cog fa-spin mx-0 text-secondary"></h6>

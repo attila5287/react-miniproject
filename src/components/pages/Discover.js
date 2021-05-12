@@ -6,8 +6,8 @@ function Discover() {
   return (
 		<div className="mini">
 			<Animated
-				animationIn="bounceInLeft" 
-				animationInDelay='1000'
+				animationIn="bounceInLeft"
+				animationInDelay={1000}
 				isVisible={true}
 			>
 				<h1 className="bg-secondary p-0 rounded text-secondary text-center">
@@ -17,9 +17,10 @@ function Discover() {
 			</Animated>
 			<Animated
 				animationIn="bounceInRight"
-				animationInDelay='1000'
+				animationInDelay={1000}
 				isVisible={true}
-			><div className="p-1 text-muted">
+			>
+				<div className="p-1 text-muted">
 					<div className="mb-2">
 						<h4 className="fas fa-cog fa-pulse mx-0 text-secondary"></h4>
 						<h6 className="fas fa-cog fa-spin mx-0 text-secondary"></h6>
@@ -34,7 +35,7 @@ function Discover() {
 			<div className="mini">
 				<Animated
 					animationIn="fadeInUp"
-					animationInDelay='3000'
+					animationInDelay={3000}
 					isVisible={true}
 				>
 					<RandomContainer />

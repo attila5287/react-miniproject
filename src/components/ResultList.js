@@ -9,7 +9,11 @@ function ResultList(props) {
         .slice(0,12)
         .map((result) => (
           <div className="col-4" key={result}>
-            <Animated animationIn="zoomIn" animationInDelay="1000" isVisible={true}>
+            <Animated
+              animationIn="zoomIn"
+              animationInDelay={1000}
+              isVisible={ true }
+            >
 
               <img
                 alt={result}

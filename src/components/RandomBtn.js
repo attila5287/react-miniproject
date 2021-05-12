@@ -3,11 +3,9 @@ import React from "react";
 function RandomBtn(props) {
   return (
 		<div className="form-group shadow-lg rounded p-0 mb-1">
-			<label htmlFor="next">
-				<h2 className="fas fa-random mx-1"></h2>
-				<i>
-					<small>Hit the button to display a random profile</small>
-				</i>
+			<label htmlFor="start">
+				<span className="text-lg fas fa-random mx-1"></span>
+				<i> Hit the button to display first random profile </i>
 			</label>
 			<button
 				id="start"
